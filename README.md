@@ -1,4 +1,4 @@
-# Meu Front
+# Projeto MVP - Desenvolvimento em FullStack Básico Front-End
 
 Este é o front-end projeto final do primeiro módulo, Full Stack Básico, da Pós-Graduação em Engenharia de Software da PUC-Rio.
 
