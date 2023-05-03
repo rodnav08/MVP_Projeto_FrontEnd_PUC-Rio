@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Desenvolvimento Full Stack Básico - MVP</title>
+
+
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Cenários para estudos de volumes vazados</h2>
+        </div>
+    </header>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome:">
+        <input type="text" id="newDiam" placeholder="Diâmetro:">
+        <input type="text" id="newEspess" placeholder="Espessura:">
+        <select id="newMaterial" class="form-select">
+            <option value="" disabled selected>Material:</option>
+            <option value="API 5L Gr. B">API 5L Gr. B</option>
+            <option value="API 5L X42">API 5L X42</option>
+            <option value="API 5L X46">API 5L X46</option>
+            <option value="API 5L X52">API 5L X52</option>
+            <option value="API 5L X56">API 5L X56</option>
+            <option value="API 5L X60">API 5L X60</option>
+            <option value="API 5L X65">API 5L X65</option>
+            <option value="API 5L X70">API 5L X70</option>
+            <option value="API 5L X80">API 5L X80</option>
+        </select>
+        <select id="newProduto" class="form-select">
+            <option value="" disabled selected> Produto:</option>
+            <option value="Gasolina">Gasolina</option>
+            <option value="Nafta">Nafta</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Etanol">Etanol Anidro</option>
+            <option value="QAV">QAV</option>
+            <option value="GLP">GLP</option>
+            <option value="LGN1">LGN-1</option>
+            <option value="LGN2">LGN-2</option>
+        </select>
+        <select id="newArranjo" class="form-select">
+            <option value="" disabled selected> Arranjo: </option>
+            <option value="1P">1P</option>
+            <option value="2P">2P</option>
+            <option value="3P">3P</option>
+            <option value="1A+1P">1A+1P</option>
+            <option value="1A+2P">1A+2P</option>
+            <option value="1A+3P">1A+3P</option>
+            <option value="2A+1P">2A+1P</option>
+            <option value="2A+2P">2A+2P</option>
+            <option value="2A+3P">2A+3P</option>
+            <option value="3A+1P">3A+1P</option>
+            <option value="3A+2P">3A+2P</option>
+            <option value="3A+3P">3A+3P</option>
+        </select>
+        <input type="text" id="newOrigem" placeholder="Origem:">
+        <input type="text" id="newDestino" placeholder="Destino:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Diâmetro</th>
+                <th>Espessura</th>
+                <th>Material</th>
+                <th>Produto</th>
+                <th>Arranjo</th>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid pt-4 px-4">
+        <div class=" text-center rounded p-4">
+            <a href="http://127.0.0.1:5000/openapi/swagger" text-align: center target="_blank">Documentação</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
