@@ -1,8 +1,6 @@
 # Meu Front
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
-
-O objetivo aqui é ilutsrar o conteúdo apresentado na terceira aula.
+Este é o front-end projeto final do primeiro módulo, Full Stack Básico, da Pós-Graduação em Engenharia de Software da PUC-Rio.
 
 ---
 ## Como executar
